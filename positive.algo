@@ -1,0 +1,13 @@
+ALGORITHM positive/negative
+VAR
+a:INTEGER
+BEGIN
+Read(a)
+IF (a>0) THEN
+Write("a>0")
+ELSE_IF (a<0) THEN
+Write("a<0")
+ELSE
+Write("a=0")
+END_IF
+END

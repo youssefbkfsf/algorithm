@@ -1,0 +1,14 @@
+ALGORITHM loop
+VAR
+a:INTEGER
+sum:INTEGER:=1
+BEGIN
+Read(a)
+FOR i FROM 1 TO a STEP step1 DO
+DO
+step1
+STEP2
+step3
+
+END_FOR
+END

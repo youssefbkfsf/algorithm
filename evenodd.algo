@@ -1,0 +1,11 @@
+ALGORITHM evenodd
+VAR
+a:INTEGER
+BEGIN
+Read(a)
+IF (a%2==0) THEN
+Write("even")
+ELSE
+Write("odd")
+END_IF
+END

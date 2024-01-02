@@ -1,0 +1,14 @@
+ALGORITHM sum three
+VAR
+a,b:INTEGER  
+BEGIN
+Read(a)
+Read(b)
+IF (a >b)THEN
+Write("a>b")   
+ELSE_IF (a<b) THEN
+Write("a<b")    
+ELSE
+Write("a=b")    
+END_IF
+END
