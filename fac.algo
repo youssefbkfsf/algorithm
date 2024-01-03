@@ -1,0 +1,12 @@
+ALGORITHM loop
+VAR
+a:INTEGER
+sum:INTEGER=1
+BEGIN
+Read(a)
+FOR i FROM 1 TO a STEP 1  DO
+DO
+sum:=sum*i
+END_FOR
+Write(sum)
+END   
