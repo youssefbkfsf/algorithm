@@ -1,0 +1,22 @@
+ALGORITHM myArray: loop [10];
+VAR
+a:INTEGER
+BEGIN
+// Declaration of an array named 'myArray' with a size of 5
+int myArray[5];
+
+// Initializing the elements of the array
+myArray[0] = 10;
+myArray[1] = 20;
+myArray[2] = 30;
+myArray[3] = 40;
+myArray[4] = 50;
+int myArray[] = {10, 20, 30, 40, 50};
+// Accessing the value at index 2
+int valueAtIndex2 = myArray[2];
+// 'valueAtIndex2' will be 30
+
+// Modifying the value at index 3
+myArray[3] = 45;
+// Now, the array becomes {10, 20, 30, 45, 50}
+END
