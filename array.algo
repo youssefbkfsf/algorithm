@@ -11,6 +11,10 @@ myArray[1] = 20;
 myArray[2] = 30;
 myArray[3] = 40;
 myArray[4] = 50;
+
+FOR i FROM 0 TO myArray.length-1 STEP 1  DO
+Read(myArray[i])
+END_FOR
 int myArray[] = {10, 20, 30, 40, 50};
 // Accessing the value at index 2
 int valueAtIndex2 = myArray[2];

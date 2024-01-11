@@ -1,3 +1,13 @@
+FUNCTION factorial(n) : INTEGER
+VAR
+    set_declarations
+BEGIN
+     if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+END
+
 ALGORITHM recursion loop
 VAR
 a:INTEGER

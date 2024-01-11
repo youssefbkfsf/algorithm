@@ -1,0 +1,17 @@
+function getFirstAndLast(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  const firstElement = arr[0];
+  const lastElement = arr[arr.length - 1];
+
+  return { firstElement, lastElement };
+}
+
+// Example usage
+const inputArray = [1, 2, 3, 4, 5];
+const result = getFirstAndLast(inputArray);
+console.log("Input Array:", inputArray);
+console.log("First Element:", result.firstElement);
+console.log("Last Element:", result.lastElement);

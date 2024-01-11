@@ -1,0 +1,42 @@
+function rotateForMax(arr) {
+  const n = arr.length;
+  
+  // Function to find the maximum value in an array
+  const findMax = (arr) => {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+    }
+    return max;
+  };
+
+  // Function to rotate the array to the left by one position
+  const rotateLeft = (arr) => {
+    const firstElement = arr.shift();
+    arr.push(firstElement);
+  };
+
+  let maxRotation = 0;
+  let maxRotatedArray = [...arr];
+
+  // Rotate the array and find the maximum value after each rotation
+  for (let i = 0; i < n; i++) {
+    rotateLeft(arr);
+    const max = findMax(arr);
+    if (max > findMax(maxRotatedArray)) {
+      maxRotation = i + 1;
+      maxRotatedArray = [...arr];
+    }
+  }
+
+  return { maxRotation, maxRotatedArray };
+}
+
+// Example usage
+const inputArray = [4, 3, 2, 1, 5];
+const result = rotateForMax(inputArray);
+console.log("Original Array:", inputArray);
+console.log("Maximum Rotated Array:", result.maxRotatedArray);
+console.log("Number of Rotations:", result.maxRotation);
